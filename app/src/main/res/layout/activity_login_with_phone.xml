@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_login_with_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.LoginWithPhoneActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_70sdp"
+                android:transitionName="@string/transition_ll_phone">
+
+                <TextView
+                    android:id="@+id/tv_moving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="@string/enter_no"
+                    android:textColor="#262626"
+                    android:textColorHint="#DADBDF"
+                    android:textSize="18sp"
+                    android:transitionName="@string/transition_tv_phone_no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_flag"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        android:transitionName="@string/transition_iv_flag"
+                        app:srcCompat="@drawable/flag" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:text="+880"
+                        android:textColor="#0E0E0E"
+                        android:textSize="18sp"
+                        android:transitionName="@string/transition_tv_code" />
+
+                    <EditText
+                        android:id="@+id/et_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:cursorVisible="true"
+                        android:hint="01912345678"
+                        android:inputType="phone"
+                        android:textColorHint="#DADBDF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.github.jorgecastilloprz.FABProgressCircle
+                android:id="@+id/fab_progress_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:arcColor="#0F9398">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    app:srcCompat="@drawable/ic_arrow_forward" />
+            </com.github.jorgecastilloprz.FABProgressCircle>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="@dimen/_15sdp"
+        android:transitionName="@string/transition_arrow"
+        app:srcCompat="@drawable/ic_arrow_back" />
+</FrameLayout>

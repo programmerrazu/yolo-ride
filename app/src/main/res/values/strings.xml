@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Yoloridelondon</string>
+    <string name="google_direction_api_key" translatable="false">AIzaSyDPozXePdt2JYOjbUatm2FG-UEptQ_VZxs</string>
+
+    <string name="phone_hint">Enter your mobile number</string>
+    <string name="enter_no">Enter your mobile number</string>
+    <string name="enter_pass">Enter your password</string>
+    <string name="reg_option">Choose an account</string>
+    <string name="reg_acc">Create your account</string>
+
+    <string name="transition_ll_phone">transition_ll_phone</string>
+    <string name="get_moving">Get moving with Yolo Ride</string>
+    <string name="transition_iv_flag">transition_iv_flag</string>
+    <string name="transition_tv_code">transition_tv_code</string>
+    <string name="transition_tv_phone_no">transition_tv_phone_no</string>
+    <string name="transition_arrow">transition_arrow</string>
+    <string name="welcome_back">Welcome back, sign in to continue</string>
+    <string name="back_press">Press back again to exist</string>
+
+    <string-array name="pickup_type_arrays">
+        <item>Select Airport pickup facility</item>
+        <item>Standard Airport Pickup</item>
+        <item>Executive Airport Pickup</item>
+        <item>Departure Pickup</item>
+    </string-array>
+
+    <string-array name="passenger_arrays">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

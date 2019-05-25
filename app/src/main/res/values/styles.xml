@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCompanyDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="SplashActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="colorPrimaryDark">@color/colorCompanyDark</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/colorCompany</item>
+        <item name="colorAccent">@color/colorCompanyAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorCompany</item>
+        <item name="colorPrimaryDark">@color/colorCompanyDark</item>
+        <item name="colorAccent">@color/colorCompanyAccent</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabMode">fixed</item>
+
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <!--<item name="tabBackground">?attr/selectableItemBackground</item>-->
+
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">@dimen/_3sdp</item>
+        <item name="tabTextAppearance">@style/TabLayoutText</item>
+    </style>
+
+    <style name="TabLayoutText">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
+    </style>
+
+</resources>

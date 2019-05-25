@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.intense.yolo.activity.registration.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_phones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_70sdp"
+        android:transitionName="@string/transition_ll_phone">
+
+        <TextView
+            android:id="@+id/tv_moving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/reg_option"
+            android:textColor="#262626"
+            android:textColorHint="#DADBDF"
+            android:textSize="18sp"
+            android:transitionName="@string/transition_tv_phone_no" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_1sdp"
+            android:paddingStart="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tv_yolo_ride_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="Yolo Ride London"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_fb_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_20sdp"
+                android:drawableStart="@drawable/ic_facebook"
+                android:padding="@dimen/_10sdp"
+                android:text="Facebook"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_google_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_20sdp"
+                android:drawableStart="@drawable/ic_google"
+                android:padding="@dimen/_10sdp"
+                android:text="Google"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_backs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="@dimen/_15sdp"
+        android:transitionName="@string/transition_arrow"
+        app:srcCompat="@drawable/ic_arrow_back" />
+</FrameLayout>
